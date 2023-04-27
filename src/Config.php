@@ -3,7 +3,7 @@ namespace src;
 
 class Config {
     //aqui que altera a base meu deus
-    const BASE_DIR = '/mvc/public';
+    const BASE_DIR = '/MVC/public';
 
     const DB_DRIVER = 'mysql';
     const DB_HOST = 'localhost';
