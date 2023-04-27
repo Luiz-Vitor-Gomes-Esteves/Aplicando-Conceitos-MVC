@@ -2,6 +2,7 @@
 namespace src;
 
 class Config {
+    //aqui que altera a base meu deus
     const BASE_DIR = '/mvc/public';
 
     const DB_DRIVER = 'mysql';
