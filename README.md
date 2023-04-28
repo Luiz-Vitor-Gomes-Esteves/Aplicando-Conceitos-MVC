@@ -1,1 +1,1 @@
-# Aplicando conceitos de MVC em um CRUD arquiteturado com PHP 
+# Aplicando conceitos de MVC junto a um CRUD com PHP 
