@@ -3,7 +3,7 @@
 <h2> Adicionar Novo Usuario</h2>
 
 <!-- Formulário para inserção de dados via MVC -->
-<form method='POST'action="<?php echo $base."/novo" ?>">
+<form method='POST'action="<?php echo $base; ?>/novo">
 
     <label>
         Nome:<br/>

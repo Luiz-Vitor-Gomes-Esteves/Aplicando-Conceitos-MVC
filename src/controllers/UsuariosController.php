@@ -22,20 +22,29 @@ class UsuariosController extends Controller {
          //Procurar na tabela quem tem esse email através do Hydrahon.
          $data = Usuario::select()->where('email',$email)->execute();
 
-         //Verificação de usuarios
-         if(count($data)>0){
-            //Adicionar a Banco
+         //Validação de usuarios
+         if(count($data)===0){
+           
             Usuario::insert([
                'nome'=>$name,
                'email'=>$email
             ])->execute();
-
+            
             $this->redirect('/');
+            
          }       
 
-      }
-      //$this->redirect('/novo');
+      }//Voltar para tela de adicionar, else
+      $this->redirect('/novo');
 
+
+   }
+   public function edit($args)
+   {
+
+   }
+   public function del($args)
+   {
 
    }
 
