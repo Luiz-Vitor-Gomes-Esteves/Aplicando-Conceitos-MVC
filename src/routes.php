@@ -12,7 +12,9 @@ $router->get('/novo','UsuariosController@add');
 $router->post('/novo','UsuariosController@addAction'); 
 
 //Rota de edição
-$router->get('/usuario/{id}/editar','HomeController@edit');
+$router->get('/usuario/{id}/editar','UsuariosController@edit');
+
+$router->post('/usuario/{id}/editar','UsuariosController@editAction');
 
 //Rota de exclusão
-$router->get('/usuario/{id}/excluir','HomeController@del');
+$router->get('/usuario/{id}/excluir','UsuariosController@del');

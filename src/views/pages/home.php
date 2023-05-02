@@ -19,8 +19,12 @@ BASE: <?= $base; ?><br>
                 <td><?php echo $usuario['nome'];?></td>
                 <td><?php echo $usuario['email'];?></td>          
                 <td>
-                    <a href="<?php echo $base;?>/usuario/<?php echo $usuario['id']?>/editar">editar</a>
-                    <a href="<?php echo $base;?>/usuario/<?php echo $usuario['id']?>/excluir">excluir</a>
+                    <a href="<?php echo $base;?>/usuario/<?php echo $usuario['id']?>/editar">
+                        <img width="30" src="<?php echo $base;?>/assets/images/editar.png" alt="">
+                    </a>
+                    <a href="<?php echo $base;?>/usuario/<?php echo $usuario['id']?>/excluir" onclick="return confirm('Confirmar?')">
+                        <img width="30" src="<?php echo $base;?>/assets/images/excluir.png" alt="">
+                    </a>
                 </td>
             </tr>
 
